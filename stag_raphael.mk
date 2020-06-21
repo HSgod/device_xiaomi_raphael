@@ -9,6 +9,9 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit some common Stag stuff.
 $(call inherit-product, vendor/stag/config/common.mk)
 
+# Inherit from custom vendor
+$(call inherit-product, vendor/ANXCamera/config.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 
